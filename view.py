@@ -1,11 +1,11 @@
-import pygame,model
+import pygame
 
 screen = pygame.display.set_mode([0, 0], pygame.FULLSCREEN)
+import model
 
 def coop():
-
-    model.sharik.draw(screen)
-    model.e.draw(screen)
-    pygame.draw.rect(screen,[255,255,255],model.gosha)
+    for l in model.sariki:
+        l.draw(screen)
+    pygame.draw.rect(screen,[255,255,255],model.gosha,1)
     pygame.display.flip()
     screen.fill([0,0,0])

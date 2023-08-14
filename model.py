@@ -1,8 +1,22 @@
-import pygame,shar
+import pygame,shar,random
+screen=pygame.display.get_surface()
+gosha=pygame.rect.Rect(0,0,screen.get_width(),screen.get_height())
+sariki=[]
+i=shar.Shar(150,500,500,2,3,gosha,False,False)
+for l in range(2):
 
-gosha=pygame.rect.Rect(10,10,200,200)
-sharik=shar.Shar(25,234,567)
-e=shar.Shar(13,567,321)
+    с=shar.Shar(random.randint(10,15),
+                random.randint(20,screen.get_width()-20),
+                random.randint(20,screen.get_height()-20),
+                random.randint(3,10),
+                random.randint(3,10),
+                i,
+                marganie=False
+
+                )
+    sariki.append(с)
+sariki.append(i)
+
 def model():
-    sharik.go()
-    e.go()
+    for l in sariki:
+        l.go()
